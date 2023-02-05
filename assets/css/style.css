@@ -252,7 +252,7 @@ img {
 .home__blob {
     position: relative;
     width: 200px;
-    height: 290px;
+    height: 200px;
     background-color: var(--body-color);
     border: 2px solid var(--text-color-light);
     justify-self: center;
@@ -264,7 +264,7 @@ img {
 
 .home__perfil {
     width: 170px;
-    height: 260px;
+    height: 170px;
     background: var(--gradient-color);
     border-radius: 5.5rem;
     overflow: hidden;
@@ -1103,18 +1103,20 @@ body.dark-theme {
 
     .home__blob {
         width: 400px;
-        height: 580px;
+        height: 400px;
         border-radius: 12.5rem;
     }
 
     .home__perfil {
         width: 340px;
-        height: 520px;
-        border-radius: 10.6rem;
+        height: 340px;
+        border-radius: 50%;
+        background: repeating-radial-gradient(black, transparent 100px);
     }
 
     .home__perfil img {
-        /* width: 300px; */
+        width: 280px;
+        object-fit: cover;
     }
 
     .home__data {
@@ -1264,4 +1266,9 @@ body.dark-theme {
         margin-top: 5rem;
     }
 
+}
+
+.home__perfil img {
+    width: 280px;
+    object-fit: cover;
 }
